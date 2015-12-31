@@ -107,7 +107,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/aaa/" style="font-size: 10px;">aaa</a>
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
 					</div>
 				</section>
 				
@@ -262,64 +262,9 @@
       
         <p>[TOC]</p>
 <h2 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>第一次萌生出写博客的想法还是大二那会，那时候技术还只是一般般，遂在博客园申请了一个帐号，P了张首页图，便开始了我的博客之旅。—— <a href="http://www.cnblogs.com/cod7-youyu/" target="_blank" rel="external">短暂的第一个博客</a><br> 到了大三下学期，PHP学得差不多了，心想作为一名未来的程序员，没有一个个人技术博客怎么行！找来wordpress在SEA上面搭建了个博客，七搞八搞，加了很多插件和特效，看起来很牛逼的样子，然而陆陆续续用了一年也不想写了。—— <a href="http://aincrad.sinaapp.com/" target="_blank" rel="external">难产的第二个博客</a>  </p>
+<p>第一次萌生出写博客的想法还是大二那会，那时候技术还只是一般般，遂在博客园申请了一个帐号，P了张首页图，便开始了我的博客之旅。—— <a href="http://www.cnblogs.com/cod7-youyu/">短暂的第一个博客</a><br> 到了大三下学期，PHP学得差不多了，心想作为一名未来的程序员，没有一个个人技术博客怎么行！找来wordpress在SEA上面搭建了个博客，七搞八搞，加了很多插件和特效，看起来很牛逼的样子，然而陆陆续续用了一年也不想写了。—— <a href="http://aincrad.sinaapp.com/">难产的第二个博客</a>  </p>
 </blockquote>
-<p>现在工作已有一年了，在工作之余，业余生活也渐渐丰富了起来，除了技术之外，总有一点生活感悟想写下来，但又苦于找不到写字的地方。直到有一天在知乎上看到有人说能在github上写博客，顿时惊为天人！一顿了解之下，立马拾起许久不用的github帐号，花了一天时间搭好了这个博客。Hexo给我的印象就是：<strong>简洁、快捷、符合程序员的操作风格</strong>。特别是还有一种跻身于世界大牛之间的错觉，～(￣▽￣～)(～￣▽￣)～</p>
-<h2 id="u4F7F_u7528Github"><a href="#u4F7F_u7528Github" class="headerlink" title="使用Github"></a>使用Github</h2><p>实际的操作其实并不用特别了解github，但是如果这样做的话很容易混乱，所以这里我做下简单的说明，详细的就见文章下方的参考资料吧。</p>
-<h3 id="u5728github_u4E0A_u521B_u5EFA_u4E00_u4E2A_u9879_u76EE"><a href="#u5728github_u4E0A_u521B_u5EFA_u4E00_u4E2A_u9879_u76EE" class="headerlink" title="在github上创建一个项目"></a>在github上创建一个项目</h3><p>登录后，在github首页，点击页面右下角<strong>“New Repository”</strong></p>
-<p>填写项目信息：</p>
-<p><strong>project name</strong>: demo-1  </p>
-<p><strong>description</strong> : my first project</p>
-<p>点击“<strong>Create Repository</strong>” ； 现在完成了一个项目在github上的创建。</p>
-<p>我们创建的是一个github仓库，一个仓库里只能存放一个项目。</p>
-<p>当你创建完成一个仓库的之后，github会给你一个提示(回头再看)</p>
-<blockquote>
-<p><strong>…or create a new repository on the command line</strong><br> echo “# demo-1” &gt;&gt; README.md<br>git init<br>git add README.md<br>git commit -m “first commit”<br>git remote add origin git@github.com:youyusan/1212.git<br>git push -u origin master<br> <strong>…or push an existing repository from the command line</strong><br>  git remote add origin git@github.com:youyusan/demo-1.git<br>git push -u origin master<br><strong>…or import code from another repository</strong><br>You can initialize this repository with code from a Subversion, Mercurial, or TFS project.</p>
-</blockquote>
-<h3 id="u5B89_u88C5git"><a href="#u5B89_u88C5git" class="headerlink" title="安装git"></a>安装git</h3><p>略，不同环境下安装条件各不相同</p>
-<h3 id="u521B_u5EFA_u5BC6_u94A5"><a href="#u521B_u5EFA_u5BC6_u94A5" class="headerlink" title="创建密钥"></a>创建密钥</h3><p>进入密钥目录<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure></p>
-<p>生成密钥<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh -keygen –t rsa –C “youremail@gmai.com”</span><br><span class="line">``` </span><br><span class="line"> 查看生成的密钥</span><br><span class="line">``` dos</span><br><span class="line"> vi id_rsa.pub</span><br></pre></td></tr></table></figure></p>
-<p>将文件内容复制到github的右上角的<br><strong>Settings</strong>—&gt;<strong>SSH  keys</strong> —&gt; <strong>Add SSH key</strong><br>再在命令行中输入<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ssh –T git@github.com</span><br><span class="line">``` </span><br><span class="line">如果提示：Hi defnngj You’ve successfully authenticated, but GitHub does <span class="flow">not</span> provide shell access. 说明你连接成功了。</span><br><span class="line">### 设置用户信息</span><br><span class="line">设置用户信息方便记录是谁提交的</span><br><span class="line">``` dos</span><br><span class="line">$ git config --global user.name "yourname"</span><br><span class="line">$ git config --global user.email  "youremail@gmail.com"</span><br></pre></td></tr></table></figure></p>
-<h3 id="u5EFA_u7ACB_u9879_u76EE_u8FDE_u63A5"><a href="#u5EFA_u7ACB_u9879_u76EE_u8FDE_u63A5" class="headerlink" title="建立项目连接"></a>建立项目连接</h3><p><strong>提示</strong>：之前我们在github上创建了一个名叫 demo-1的项目，地址为：git@github.com:yourname/demo-1.git<br>在本地创建一个文件夹叫demo<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> demo</span><br></pre></td></tr></table></figure></p>
-<p>然后根据之前的教程就可以了<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> "# demo-<span class="number">1</span>" &gt;&gt; README.<span class="built_in">md</span>  	//创建一个remode.<span class="built_in">md</span>的文件并写入# demo-<span class="number">1</span></span><br><span class="line">git init 						//git初始化</span><br><span class="line">git add README.<span class="built_in">md</span>  				//向git里增加这个新文件</span><br><span class="line">git commit -m "first commit" 	//提交并输入提交的内容</span><br><span class="line">git remote add origin  git@github.com:yourname/demo-<span class="number">1</span>.git //第一次提交项目，确定本地和远程哪个项目建立链接</span><br><span class="line">git push -u origin master 		//将本地项目提交上去</span><br></pre></td></tr></table></figure></p>
-<p>这样我就完成了项目的连接和第一个文件的提交</p>
-<h3 id="u5176_u4ED6_u547D_u4EE4"><a href="#u5176_u4ED6_u547D_u4EE4" class="headerlink" title="其他命令"></a>其他命令</h3><ul>
-<li><strong>git status</strong>   //查看当前项目下所有文的状态，如果第一次，你会发现都红颜色的，因为它还没有交给git/github管理。</li>
-<li><strong>git remote -v</strong>  //查看你当前项目远程连接的是哪个仓库地址。</li>
-<li><strong>git clone git@github.com:yourname/demo-1.git</strong>  //在git下面切换到想存放此项目的文件目录下，运行这条命令就可以将项目克隆下来。</li>
-<li><strong>git fetch origin</strong>    //取得远程更新，这里可以看做是准备要取了</li>
-<li><strong>git merge origin/master</strong>  //把更新的内容合并到本地分支/master</li>
-<li><p><strong>git rm  aaa/bbb.html</strong>    //移除我们删除的那个文件，不然git不允许我们往远程仓库提交。</p>
-</li>
-<li><p><strong>git rm  aaa/ccc/ -r</strong>   // -r 会把ccc/目录下的所有内容一次性移动。</p>
-</li>
-</ul>
-<h2 id="u642D_u5EFAHexo"><a href="#u642D_u5EFAHexo" class="headerlink" title="搭建Hexo"></a>搭建Hexo</h2><h3 id="u5B89_u88C5node-js"><a href="#u5B89_u88C5node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p>略</p>
-<h3 id="u5B89_u88C5hexo"><a href="#u5B89_u88C5hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>安装好node.js后执行如下命令安装hexo:<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<p>初始化到制定目录<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure></p>
-<p>也可以cd到目标目录，执行hexo init</p>
-<p>然后它会提示你：<br>INFO  You are almost done! Don’t forget to run ‘npm install’ before you start blogging with Hexo!<br>再输入<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>至此所有的hexo文件就全部下载到你指定的目录了！</p>
-<h3 id="u642D_u5EFA_u535A_u5BA2"><a href="#u642D_u5EFA_u535A_u5BA2" class="headerlink" title="搭建博客"></a>搭建博客</h3><p>首先在github创建一个新repository，名字按自己喜欢的来，比如 <strong>yourname.github.io</strong></p>
-<p>然后在之前安装好hexo目录下找到_config.yml，<br>修改deploy:为<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">deploy: </span><br><span class="line">  <span class="title">type</span>: <span class="title">git</span></span><br><span class="line">  <span class="title">repository</span>: <span class="title">http</span>://<span class="title">github.com</span>/<span class="title">yourname</span>/<span class="title">yourname.github.io.git</span></span><br><span class="line">  <span class="title">branch</span>: <span class="title">master</span></span></span><br></pre></td></tr></table></figure></p>
-<p>执行以下命令：<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save //安装deploy</span><br><span class="line">hexo generate //执行生成静态html文件</span><br><span class="line">hexo deploy   //上传静态文件到git上</span><br></pre></td></tr></table></figure></p>
-<p>打开<a href="http://yourname.github.io/" target="_blank" rel="external">http://yourname.github.io/</a> 便可以看到搭建好的博客了！</p>
-<p><strong>注意</strong>：</p>
-<ul>
-<li>不要使用git命令上传，hexo把命令封装好了，只要执行那几个命令就可以了</li>
-<li>每次修改文章、配置后都要先编译成静态文件，再上传<h3 id="u7F16_u5199_u6587_u7AE0"><a href="#u7F16_u5199_u6587_u7AE0" class="headerlink" title="编写文章"></a>编写文章</h3>执行new命令，生成指定名称的文章到hexo\source_post\postname.md<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new "postname"</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>例：<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">title: <span class="title">postName</span> #文章页面上的显示名称，可以任意修改，不会出现在<span class="title">URL</span>中</span><br><span class="line"><span class="title">date</span>: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改</span><br><span class="line"><span class="title">categories</span>: #文章分类目录，可以为空，注意:后面有个空格</span><br><span class="line"><span class="title">tags</span>: #文章标签，可空，多标签请用格式[<span class="title">tag1</span>,<span class="title">tag2</span>,<span class="title">tag3</span>]，注意:后面有个空格</span><br><span class="line">---</span><br><span class="line">这里开始使用<span class="title">markdown</span>格式输入你的正文。</span></span><br></pre></td></tr></table></figure></p>
-<p>至于修改主题、配置域名等功能就不再详述了，可以参考其他人的文章</p>
-<h2 id="u53C2_u8003_u8D44_u6599"><a href="#u53C2_u8003_u8D44_u6599" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="http://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html" target="_blank" rel="external">git/github初级运用自如 - 虫师 - 博客园</a></li>
-<li><a href="https://www.zhihu.com/question/20962496" target="_blank" rel="external">如何在Github上写博客？ - 知乎</a></li>
-<li><a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">如何搭建一个独立博客——简明 Github Pages与 jekyll 教程 - 读立写生</a></li>
-<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客 | 不如</a></li>
-<li><a href="http://zipperary.com/2013/05/28/hexo-guide-1/" target="_blank" rel="external">hexo系列教程：（一）hexo介绍 | Zippera’s blog</a></li>
-</ul>
-
+<p>现在工作已有一年了，在工作之余，业余生活也渐渐丰富了起来，除了技术之外，总有一点生活感悟想写下来，但又苦于找不到写字的地方。直到有一天在知乎上看到有人说能在github上写博客，顿时惊为天人！一顿了解之下，立马拾起许久不用的github帐号，花了一天时间搭好了这个博客。Hexo给我的印象就是：<strong>简洁、快捷、符合程序员的操作风格</strong>。特别是还有一种跻身于世界大牛之间的错觉，～(￣▽￣～)(～￣▽￣)～<br>
       
     </div>
     
@@ -327,11 +272,15 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aaa/">aaa</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 	</div>
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/12/31/welcome-md/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
