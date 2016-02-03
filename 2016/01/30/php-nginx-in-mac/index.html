@@ -6,37 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Mac下安装PHP开发环境 | 游渔的渔人小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境
-Mac下有必要重新搭建PHP开发环境么有必要
-
-Mac自带的PHP不支持PHP扩展
-
-Mac自带apache不能优雅的install/remove
-
-Mac自带的PHP版本往往不是最新">
+  <meta name="description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac下安装PHP开发环境">
 <meta property="og:url" content="http://youyusan.github.io/2016/01/30/php-nginx-in-mac/index.html">
 <meta property="og:site_name" content="游渔的渔人小屋">
-<meta property="og:description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境
-Mac下有必要重新搭建PHP开发环境么有必要
-
-Mac自带的PHP不支持PHP扩展
-
-Mac自带apache不能优雅的install/remove
-
-Mac自带的PHP版本往往不是最新">
-<meta property="og:updated_time" content="2016-02-03T03:23:05.000Z">
+<meta property="og:description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境">
+<meta property="og:updated_time" content="2016-02-03T03:25:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下安装PHP开发环境">
-<meta name="twitter:description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境
-Mac下有必要重新搭建PHP开发环境么有必要
-
-Mac自带的PHP不支持PHP扩展
-
-Mac自带apache不能优雅的install/remove
-
-Mac自带的PHP版本往往不是最新">
+<meta name="twitter:description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境">
   
     <link rel="alternative" href="/atom.xml" title="游渔的渔人小屋" type="application/atom+xml">
   
@@ -230,7 +209,7 @@ Mac自带的PHP版本往往不是最新">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把<br>Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境</p>
+        <p>最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把<br>Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境<br><a id="more"></a></p>
 <h2 id="Mac_u4E0B_u6709_u5FC5_u8981_u91CD_u65B0_u642D_u5EFAPHP_u5F00_u53D1_u73AF_u5883_u4E48"><a href="#Mac_u4E0B_u6709_u5FC5_u8981_u91CD_u65B0_u642D_u5EFAPHP_u5F00_u53D1_u73AF_u5883_u4E48" class="headerlink" title="Mac下有必要重新搭建PHP开发环境么"></a>Mac下有必要重新搭建PHP开发环境么</h2><p><strong>有必要</strong></p>
 <ol>
 <li><p>Mac自带的PHP不支持PHP扩展</p>
@@ -266,11 +245,10 @@ Mac自带的PHP版本往往不是最新">
 </li>
 </ol>
 <h2 id="u5B89_u88C5PHP5-6"><a href="#u5B89_u88C5PHP5-6" class="headerlink" title="安装PHP5.6"></a>安装PHP5.6</h2><p>这里使用的是php-fpm的安装方式，详细的安装说明可以见：<a href="https://github.com/Homebrew/homebrew-php" target="_blank" rel="external">homebrew-php</a></p>
-<p>###加入官方源</p>
-<pre><code>brew tap homebrew/dupes
+<h3 id="u52A0_u5165_u5B98_u65B9_u6E90"><a href="#u52A0_u5165_u5B98_u65B9_u6E90" class="headerlink" title="加入官方源"></a>加入官方源</h3><pre><code>brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/php
-</code></pre><p>###安装PHP<br>默认安装会运行在apache下，而我们要使它运行在php-fpm下，所以要增加参数<br><code>--without-fpm --without-apache</code> ，查看所有安装参数可以输入<code>brew option php56</code>进行查看，参考安装指令：</p>
+</code></pre><h3 id="u5B89_u88C5PHP"><a href="#u5B89_u88C5PHP" class="headerlink" title="安装PHP"></a>安装PHP</h3><p>默认安装会运行在apache下，而我们要使它运行在php-fpm下，所以要增加参数<br><code>--without-fpm --without-apache</code> ，查看所有安装参数可以输入<code>brew option php56</code>进行查看，参考安装指令：</p>
 <pre><code>brew install php56 \
 --without-snmp \
 --without-apache \
@@ -292,7 +270,7 @@ brew tap homebrew/php
 </code></pre><p>如果出现扩展启动错误，可以使用下面命令重新安装</p>
 <pre><code>brew reinstall php56-gearman --build-from-source
 </code></pre><p>附：测试Mac自带PHP的命令是：<code>/usr/bin/php -v</code> </p>
-<p>###运行php-fpm<br>测试php-fpm</p>
+<h3 id="u8FD0_u884Cphp-fpm"><a href="#u8FD0_u884Cphp-fpm" class="headerlink" title="运行php-fpm"></a>运行php-fpm</h3><p>测试php-fpm</p>
 <pre><code>php-fpm -v
 </code></pre><p>附：测试Mac自带的php-fpm命令：<code>/usr/bin/php-fpm -v</code></p>
 <p>运行php-fpm</p>
@@ -319,9 +297,7 @@ ERROR: FPM initialization failed
 #找到`error_log`项，在下面添加：
 error_log = /usr/local/var/log/php-fpm.log
 pid = /usr/local/var/run/php-fpm.pid
-</code></pre><p>##安装nginx</p>
-<p>###基础安装</p>
-<p>安装命令：</p>
+</code></pre><h2 id="u5B89_u88C5nginx"><a href="#u5B89_u88C5nginx" class="headerlink" title="安装nginx"></a>安装nginx</h2><h3 id="u57FA_u7840_u5B89_u88C5"><a href="#u57FA_u7840_u5B89_u88C5" class="headerlink" title="基础安装"></a>基础安装</h3><p>安装命令：</p>
 <pre><code>brew install nginx
 </code></pre><p>启动关闭命令：</p>
 <pre><code>#测试配置是否有语法错误
@@ -338,7 +314,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 </code></pre><p>nginx监听80端口：</p>
 <pre><code>sudo chown root:wheel /usr/local/Cellar/nginx/1.6.0_1/bin/nginx
 sudo chmod u+s /usr/local/Cellar/nginx/1.6.0_1/bin/nginx
-</code></pre><p>###配置文件<br>按ubuntu文件格式来储存配置文件，方便配置多个域名：</p>
+</code></pre><h3 id="u914D_u7F6E_u6587_u4EF6"><a href="#u914D_u7F6E_u6587_u4EF6" class="headerlink" title="配置文件"></a>配置文件</h3><p>按ubuntu文件格式来储存配置文件，方便配置多个域名：</p>
 <pre><code>mkdir -p /usr/local/var/logs/nginx
 mkdir -p /usr/local/etc/nginx/sites-available
 mkdir -p /usr/local/etc/nginx/sites-enabled
@@ -451,8 +427,7 @@ server {
     error_page  403     /403.html;
 }
 </code></pre><p>这样启动了php-fpm和Nginx后，就可以通过<code>http://localhost</code>来运访问php程序了，也可以使用<code>https://localhost</code>来访问ssl内容</p>
-<p>##安装mysql</p>
-<p>###mysql基本安装<br>安装命令：</p>
+<h2 id="u5B89_u88C5mysql"><a href="#u5B89_u88C5mysql" class="headerlink" title="安装mysql"></a>安装mysql</h2><h3 id="mysql_u57FA_u672C_u5B89_u88C5"><a href="#mysql_u57FA_u672C_u5B89_u88C5" class="headerlink" title="mysql基本安装"></a>mysql基本安装</h3><p>安装命令：</p>
 <pre><code>brew install mysql
 </code></pre><p>安装完成之后开启MySQL安全机制：</p>
 <pre><code>/usr/local/opt/mysql/bin/mysql_secure_installation
@@ -463,7 +438,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 <pre><code>mysql.server start
 mysql.server stop
 mysql -u root -p
-</code></pre><p>###安装phpmyadmin<br>安装命令：</p>
+</code></pre><h3 id="u5B89_u88C5phpmyadmin"><a href="#u5B89_u88C5phpmyadmin" class="headerlink" title="安装phpmyadmin"></a>安装phpmyadmin</h3><p>安装命令：</p>
 <pre><code>brew install phpmyadmin
 </code></pre><p>创建phpmyadmin虚拟主机：</p>
 <pre><code>vim /usr/local/etc/nginx/sites-available/phpmyadmin
@@ -507,7 +482,7 @@ https://localhost/ -&gt; index.html(SSL)
 https://localhost/info -&gt; info.php via phpinfo();(SSL)
 https://localhost/404 -&gt; 404.html(SSL)
 https://localhost:306 -&gt; phpmyadmin(SSL)
-</code></pre><p>##安装memcached<br>安装命令：</p>
+</code></pre><h2 id="u5B89_u88C5memcached"><a href="#u5B89_u88C5memcached" class="headerlink" title="安装memcached"></a>安装memcached</h2><p>安装命令：</p>
 <pre><code>brew install memcached
 </code></pre><p>启动/停止指令：</p>
 <pre><code>memcached -d
@@ -515,7 +490,7 @@ killall memcached
 </code></pre><p>加入开机启动：</p>
 <pre><code>ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
-</code></pre><p>##安装redis<br>安装命令：</p>
+</code></pre><h2 id="u5B89_u88C5redis"><a href="#u5B89_u88C5redis" class="headerlink" title="安装redis"></a>安装redis</h2><p>安装命令：</p>
 <pre><code>brew install redis
 </code></pre><p>Redis默认配置文件不允许以Deamon方式运行，因此需要先修改配置文件</p>
 <pre><code>vim /usr/local/etc/redis.conf
@@ -525,7 +500,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
 <pre><code>ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 </code></pre><p>附：所有开机启动的命令可以用<code>brew info</code>查看</p>
-<p>##设置快捷启动<br>使用alias命令，创建服务快捷启动：</p>
+<h2 id="u8BBE_u7F6E_u5FEB_u6377_u542F_u52A8"><a href="#u8BBE_u7F6E_u5FEB_u6377_u542F_u52A8" class="headerlink" title="设置快捷启动"></a>设置快捷启动</h2><p>使用alias命令，创建服务快捷启动：</p>
 <pre><code>vim ~/.bash_aliases
 #输入以下内容
 alias nginx.start=&apos;launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist&apos;
@@ -546,8 +521,7 @@ alias memcached.restart=&apos;memcached.stop &amp;&amp; memcached.start&apos;
 </code></pre><p>让快捷命令生效</p>
 <pre><code>echo &quot;[[ -f ~/.bash_aliases ]] &amp;&amp; . ~/.bash_aliases&quot; &gt;&gt; ~/.bash_profile     
 source ~/.bash_profile
-</code></pre><p>##参考</p>
-<ul>
+</code></pre><h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><p><a href="http://avnpc.com/pages/install-lnmp-on-osx" target="_blank" rel="external">Mac下安装LNMP(Nginx+PHP5.6)环境</a></p>
 </li>
 <li><p><a href="http://segmentfault.com/a/1190000000606752#articleHeader1" target="_blank" rel="external">全新安装Mac OSX 开发者环境 同时使用homebrew搭建 PHP，Nginx ，MySQL，Redis，Memcache … … (LNMP开发环境)</a></p>
