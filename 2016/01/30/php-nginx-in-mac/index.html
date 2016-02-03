@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://youyusan.github.io/2016/01/30/php-nginx-in-mac/index.html">
 <meta property="og:site_name" content="游渔的渔人小屋">
 <meta property="og:description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境">
-<meta property="og:updated_time" content="2016-02-03T03:25:56.000Z">
+<meta property="og:updated_time" content="2016-02-03T03:30:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下安装PHP开发环境">
 <meta name="twitter:description" content="最近有点闲钱买Mac了，便果断换了个rmbp当工作本，折腾了小半天，终于把Mac下PHP的开发环境搭好了，用的是nginx+php-fpm，特地记录一下如何在Mac(版本10.11.3)下从零开始安装PHP开发环境">
@@ -248,7 +248,7 @@
 <h3 id="u52A0_u5165_u5B98_u65B9_u6E90"><a href="#u52A0_u5165_u5B98_u65B9_u6E90" class="headerlink" title="加入官方源"></a>加入官方源</h3><pre><code>brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/php
-</code></pre><h3 id="u5B89_u88C5PHP"><a href="#u5B89_u88C5PHP" class="headerlink" title="安装PHP"></a>安装PHP</h3><p>默认安装会运行在apache下，而我们要使它运行在php-fpm下，所以要增加参数<br><code>--without-fpm --without-apache</code> ，查看所有安装参数可以输入<code>brew option php56</code>进行查看，参考安装指令：</p>
+</code></pre><h3 id="u5B89_u88C5PHP"><a href="#u5B89_u88C5PHP" class="headerlink" title="安装PHP"></a>安装PHP</h3><p>默认安装会运行在apache下，而我们要使它运行在php-fpm下，所以要增加参数<br><code>--with-fpm --without-apache</code> ，查看所有安装参数可以输入<code>brew option php56</code>进行查看，参考安装指令：</p>
 <pre><code>brew install php56 \
 --without-snmp \
 --without-apache \
