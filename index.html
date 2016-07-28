@@ -199,65 +199,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近终于把Mac带到公司当开发本了，继续开始装其他开发软件，首先当然是iterm和zsh这两个神器</p>
-<h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><h3 id="u4ECB_u7ECD_u4E0E_u5B89_u88C5"><a href="#u4ECB_u7ECD_u4E0E_u5B89_u88C5" class="headerlink" title="介绍与安装"></a>介绍与安装</h3><p>一句话就可以介绍，Mac下最好用的终端，<br>官网：<a href="https://www.iterm2.com/" target="_blank" rel="external">官网下载地址</a></p>
-<p>下载后解压即可用</p>
-<h3 id="u57FA_u672C_u7528_u6CD5"><a href="#u57FA_u672C_u7528_u6CD5" class="headerlink" title="基本用法"></a>基本用法</h3><ul>
-<li><p><strong>选中复制</strong>：选中任意地方即复制下来，双击选中单词，三击选中一行，四击智能选中。</p>
-</li>
-<li><p><strong>智能搜索</strong>：command＋f打开搜索，支持正则</p>
-</li>
-</ul>
-<ul>
-<li><p><strong>自动完成</strong>：输入头几个字母，按command＋；将列出之前输入过的类似命令</p>
-</li>
-<li><p><strong>剪切历史</strong>：按command＋shift＋h，将列出剪切板的历史纪录</p>
-</li>
-<li><p><strong>屏幕分割</strong>：command＋d 垂直分割屏幕 command＋shift＋d 水平分割屏幕</p>
-</li>
-<li><p><strong>全屏切换</strong>：command＋enter 进入和返回全屏模式</p>
-</li>
-<li><p><strong>展示tab</strong>：command＋option＋e 展示所有tab</p>
-</li>
-<li><p><strong>保存快照</strong>：Window &gt; Save Window Arrangement.可以记录当前快照，Restore Window Arrangement恢复记录过的快照</p>
-</li>
-</ul>
-<h3 id="u9AD8_u7EA7_u914D_u7F6E"><a href="#u9AD8_u7EA7_u914D_u7F6E" class="headerlink" title="高级配置"></a>高级配置</h3><ul>
-<li><p><strong>路径重复</strong>：在新tab中使用前一tab路径<br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.42.png" alt="image"></p>
-</li>
-<li><p><strong>透明窗口</strong>：在浏览器或者编辑器上面用半透明的窗口的形式直接调出iterm2<br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.44.png" alt="image"> </p>
-</li>
-</ul>
-<h3 id="u5916_u89C2_u8BBE_u7F6E"><a href="#u5916_u89C2_u8BBE_u7F6E" class="headerlink" title="外观设置"></a>外观设置</h3><ul>
-<li><p>导入主题 <a href="https://raw.githubusercontent.com/tofishes/iterm2-zsh/master/Monokai-Soda.itermcolors" target="_blank" rel="external">下载主题文件</a><br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.43.png" alt="image"></p>
-</li>
-<li><p>设置背景<br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.455.png" alt="image"></p>
-</li>
-</ul>
-<h2 id="Oh_my_zsh"><a href="#Oh_my_zsh" class="headerlink" title="Oh my zsh"></a>Oh my zsh</h2><p>我们一般用的shell是bash，但是Mac默认支持zsh，而zsh又有很强大的功能，通过oh my zsh使用不但容易上手还可以设置各种彩色主题，官网：<a href="http://ohmyz.sh/" target="_blank" rel="external">Oh My ZSH!</a></p>
-<h3 id="u4E0B_u8F7D_u5B89_u88C5"><a href="#u4E0B_u8F7D_u5B89_u88C5" class="headerlink" title="下载安装"></a>下载安装</h3><p>Mac安装命令：</p>
-<pre><code>$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
-</code></pre><p>设置zsh为你的默认shell</p>
-<pre><code>chsh -s /bin/zsh
-</code></pre><p>重启终端就OK了</p>
-<h3 id="u4FEE_u6539_u4E3B_u9898"><a href="#u4FEE_u6539_u4E3B_u9898" class="headerlink" title="修改主题"></a>修改主题</h3><p>主题地址：<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes" target="_blank" rel="external">Themes</a></p>
-<p>编辑配置文件</p>
-<pre><code>vi ~/.zshrc
-</code></pre><p>修改</p>
-<pre><code>ZSH_THEME=&quot;ys&quot;
-</code></pre><p><img src="https://cloud.githubusercontent.com/assets/1415488/13198621/f2c1320c-d848-11e5-8f22-7fac1baeec2f.jpg" alt="image"></p>
-<h3 id="u914D_u7F6E"><a href="#u914D_u7F6E" class="headerlink" title="配置"></a>配置</h3><ul>
-<li>设置别名</li>
-<li>插件</li>
-</ul>
-<p>详见：<a href="https://zhuanlan.zhihu.com/p/19556676" target="_blank" rel="external">zsh</a></p>
-<h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="http://my.oschina.net/gabriel1215/blog/356935" target="_blank" rel="external">mac下非常好用的命令行工具 iTerm2</a></li>
-<li><a href="http://www.cnsecer.com/7859.html" target="_blank" rel="external">iterm2 和oh my zsh安装以及使用介绍</a></li>
-<li><a href="http://www.cnsecer.com/7859.html" target="_blank" rel="external">Mac下配置iterm2和oh-my-zsh</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/19556676" target="_blank" rel="external">终极 Shell——ZSH</a></li>
-</ul>
-
+        <p>最近终于把Mac带到公司当开发本了，继续开始装其他开发软件，首先当然是iterm和zsh这两个神器<br>
       
     </div>
     
@@ -270,6 +212,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/07/28/iterm2-zsh/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
