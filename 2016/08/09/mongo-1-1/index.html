@@ -4,23 +4,19 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Mac下安装和使用iTerm2&amp;Oh my zsh | 游渔的渔人小屋</title>
+  <title>MongoDB基本概念介绍 | 游渔的渔人小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近终于把Mac带到公司当开发本了，继续开始装其他开发软件，首先当然是iterm和zsh这两个神器">
+  <meta name="description" content="简介mongodb是一款非关系型面向文档的数据库，它的特点是高性能、易部署、易使用，存储数据方便。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mac下安装和使用iTerm2&Oh my zsh">
-<meta property="og:url" content="http://youyusan.github.io/2016/07/28/iterm2-zsh/index.html">
+<meta property="og:title" content="MongoDB基本概念介绍">
+<meta property="og:url" content="http://youyusan.github.io/2016/08/09/mongo-1-1/index.html">
 <meta property="og:site_name" content="游渔的渔人小屋">
-<meta property="og:description" content="最近终于把Mac带到公司当开发本了，继续开始装其他开发软件，首先当然是iterm和zsh这两个神器">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.42.png">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.44.png">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.43.png">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.455.png">
-<meta property="og:image" content="https://cloud.githubusercontent.com/assets/1415488/13198621/f2c1320c-d848-11e5-8f22-7fac1baeec2f.jpg">
-<meta property="og:updated_time" content="2016-08-04T09:44:00.000Z">
+<meta property="og:description" content="简介mongodb是一款非关系型面向文档的数据库，它的特点是高性能、易部署、易使用，存储数据方便。">
+<meta property="og:image" content="http://youyusan.github.io/media/14811912227153/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-09%2010.27.57.png">
+<meta property="og:updated_time" content="2016-12-09T03:22:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mac下安装和使用iTerm2&Oh my zsh">
-<meta name="twitter:description" content="最近终于把Mac带到公司当开发本了，继续开始装其他开发软件，首先当然是iterm和zsh这两个神器">
+<meta name="twitter:title" content="MongoDB基本概念介绍">
+<meta name="twitter:description" content="简介mongodb是一款非关系型面向文档的数据库，它的特点是高性能、易部署、易使用，存储数据方便。">
   
     <link rel="alternative" href="/atom.xml" title="游渔的渔人小屋" type="application/atom+xml">
   
@@ -177,11 +173,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-iterm2-zsh" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mongo-1-1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/28/iterm2-zsh/" class="article-date">
-  	<time datetime="2016-07-28T05:54:19.000Z" itemprop="datePublished">2016-07-28</time>
+      <a href="/2016/08/09/mongo-1-1/" class="article-date">
+  	<time datetime="2016-08-09T03:20:15.000Z" itemprop="datePublished">2016-08-09</time>
 </a>
     </div>
   
@@ -194,7 +190,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Mac下安装和使用iTerm2&amp;Oh my zsh
+      MongoDB基本概念介绍
     </h1>
   
 
@@ -203,7 +199,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iTerm/">iTerm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zsh/">zsh</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>
 	</div>
 
         
@@ -214,63 +210,45 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近终于把Mac带到公司当开发本了，继续开始装其他开发软件，首先当然是iterm和zsh这两个神器<br><a id="more"></a></p>
-<h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><h3 id="u4ECB_u7ECD_u4E0E_u5B89_u88C5"><a href="#u4ECB_u7ECD_u4E0E_u5B89_u88C5" class="headerlink" title="介绍与安装"></a>介绍与安装</h3><p>一句话就可以介绍，Mac下最好用的终端，<br>官网：<a href="https://www.iterm2.com/" target="_blank" rel="external">官网下载地址</a></p>
-<p>下载后解压即可用</p>
-<h3 id="u57FA_u672C_u7528_u6CD5"><a href="#u57FA_u672C_u7528_u6CD5" class="headerlink" title="基本用法"></a>基本用法</h3><ul>
-<li><p><strong>选中复制</strong>：选中任意地方即复制下来，双击选中单词，三击选中一行，四击智能选中。</p>
-</li>
-<li><p><strong>智能搜索</strong>：command＋f打开搜索，支持正则</p>
-</li>
+        <h2 id="u7B80_u4ECB"><a href="#u7B80_u4ECB" class="headerlink" title="简介"></a>简介</h2><p>mongodb是一款非关系型面向文档的数据库，它的特点是高性能、易部署、易使用，存储数据方便。<br><a id="more"></a></p>
+<h2 id="u6982_u5FF5"><a href="#u6982_u5FF5" class="headerlink" title="概念"></a>概念</h2><h3 id="u6570_u636E_u5E93"><a href="#u6570_u636E_u5E93" class="headerlink" title="数据库"></a>数据库</h3><p>数据库是一个物理容器集合。每个数据库都有自己的一套文件系统上的文件。一个单一的MongoDB服务器通常有多个数据库。</p>
+<h3 id="u96C6_u5408"><a href="#u96C6_u5408" class="headerlink" title="集合"></a>集合</h3><p>集合是一组MongoDB的文档。它相当于一个RDBMS表。收集存在于一个单一的数据库。集合不执行模式。集合内的文档可以有不同的领域。通常情况下，一个集合中的所有文件是相同或相关的目的。<br><em>它类似关系型数据库中的“表”，多个集合构成数据库。</em></p>
+<h3 id="u6587_u6863"><a href="#u6587_u6863" class="headerlink" title="文档"></a>文档</h3><p>文档是一组键 - 值对。文件动态模式。动态模式是指，在相同集合中的文档不需要具有相同的字段或结构组的公共字段的集合的文档，可以容纳不同类型的数据。<br><em>它类似关系型数据库中的“行”，多个文档构成集合</em><br><img src="/media/14811912227153/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-09%2010.27.57.png" alt="屏幕快照 2016-12-09 10.27.57"></p>
+<h3 id="u7D22_u5F15"><a href="#u7D22_u5F15" class="headerlink" title="索引"></a>索引</h3><p>索引是一种特殊的数据结构，存储设置在一个易于遍历形式的数据的一小部分。索引存储一个特定的字段或一组字段的值，在索引中指定的值的字段排列的。</p>
+<h3 id="u590D_u5236"><a href="#u590D_u5236" class="headerlink" title="复制"></a>复制</h3><p>复制是跨多个服务器同步数据的过程中。复制提供了冗余和增加数据可用性与不同的数据库服务器上的数据的多个副本，复制保护数据库从一台服务器上的损失。复制也可以让恢复硬件故障和服务中断。额外的数据副本，可以进行灾难恢复，报告，或备份。</p>
+<h3 id="u5206_u7247"><a href="#u5206_u7247" class="headerlink" title="分片"></a>分片</h3><p>分片存储在多台机器上的数据记录的过程，它是MongoDB的方法来满足数据增长的需求。一台机器上的大小的数据的增加，可能并不足够来存储数据，也不能提供可接受的读取和写入通过。分片解决问题的水平缩放。通过分片，你添加更多的机器支持数据增长的读取和写入操作需求。</p>
+<h2 id="u5E38_u7528_u547D_u4EE4"><a href="#u5E38_u7528_u547D_u4EE4" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
+<li><code>mongod</code> 执行命令</li>
+<li><code>mongo</code> 连接客户端</li>
+<li><code>mongoimport</code>/<code>mongoexport</code> 数据导入／导出</li>
+<li><code>mongodump</code>/<code>mongorestore</code> 数据备份／恢复</li>
+<li><code>mongostat</code> 查看mongo服务器的状态</li>
+<li><code>explain</code> 查看查询的过程，以便进行性能优化</li>
+<li><code>pretty</code> 格式化查询结果</li>
 </ul>
-<ul>
-<li><p><strong>自动完成</strong>：输入头几个字母，按command＋；将列出之前输入过的类似命令</p>
-</li>
-<li><p><strong>剪切历史</strong>：按command＋shift＋h，将列出剪切板的历史纪录</p>
-</li>
-<li><p><strong>屏幕分割</strong>：command＋d 垂直分割屏幕 command＋shift＋d 水平分割屏幕</p>
-</li>
-<li><p><strong>全屏切换</strong>：command＋enter 进入和返回全屏模式</p>
-</li>
-<li><p><strong>展示tab</strong>：command＋option＋e 展示所有tab</p>
-</li>
-<li><p><strong>保存快照</strong>：Window &gt; Save Window Arrangement.可以记录当前快照，Restore Window Arrangement恢复记录过的快照</p>
-</li>
+<h2 id="u642D_u5EFA_uFF08_u5F85_u5B8C_u6210_uFF09"><a href="#u642D_u5EFA_uFF08_u5F85_u5B8C_u6210_uFF09" class="headerlink" title="搭建（待完成）"></a>搭建（待完成）</h2><ul>
+<li>搭建简单的单机服务</li>
+<li>搭建具有冗余容错功能的复制集</li>
+<li>搭建大规模数据集群</li>
+<li>完成集群的自动部署</li>
 </ul>
-<h3 id="u9AD8_u7EA7_u914D_u7F6E"><a href="#u9AD8_u7EA7_u914D_u7F6E" class="headerlink" title="高级配置"></a>高级配置</h3><ul>
-<li><p><strong>路径重复</strong>：在新tab中使用前一tab路径<br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.42.png" alt="image"></p>
-</li>
-<li><p><strong>透明窗口</strong>：在浏览器或者编辑器上面用半透明的窗口的形式直接调出iterm2<br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.44.png" alt="image"> </p>
-</li>
+<h2 id="u4F7F_u7528_uFF08_u5F85_u5B8C_u6210_uFF09"><a href="#u4F7F_u7528_uFF08_u5F85_u5B8C_u6210_uFF09" class="headerlink" title="使用（待完成）"></a>使用（待完成）</h2><ul>
+<li>文档读写更新删除</li>
+<li>索引的创建与使用</li>
+<li>复杂的聚合查询</li>
+<li>数据集合进行分片</li>
+<li>数据备份与恢复</li>
+<li>数据迁移</li>
 </ul>
-<h3 id="u5916_u89C2_u8BBE_u7F6E"><a href="#u5916_u89C2_u8BBE_u7F6E" class="headerlink" title="外观设置"></a>外观设置</h3><ul>
-<li><p>导入主题 <a href="https://raw.githubusercontent.com/tofishes/iterm2-zsh/master/Monokai-Soda.itermcolors" target="_blank" rel="external">下载主题文件</a><br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.43.png" alt="image"></p>
+<h2 id="u8FD0_u7EF4_uFF08_u5F85_u5B8C_u6210_uFF09"><a href="#u8FD0_u7EF4_uFF08_u5F85_u5B8C_u6210_uFF09" class="headerlink" title="运维（待完成）"></a>运维（待完成）</h2><ul>
+<li>部署mongodb集群</li>
+<li>处理多种常见的故障<ol>
+<li>单节点失效，如何恢复工作</li>
+<li>数据库意外被杀死，如何进行数据恢复</li>
+<li>数据库发生拒绝服务时如何排查原因</li>
+<li>数据库磁盘快满时如何处理</li>
+</ol>
 </li>
-<li><p>设置背景<br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-07-28%20at%2014.455.png" alt="image"></p>
-</li>
-</ul>
-<h2 id="Oh_my_zsh"><a href="#Oh_my_zsh" class="headerlink" title="Oh my zsh"></a>Oh my zsh</h2><p>我们一般用的shell是bash，但是Mac默认支持zsh，而zsh又有很强大的功能，通过oh my zsh使用不但容易上手还可以设置各种彩色主题，官网：<a href="http://ohmyz.sh/" target="_blank" rel="external">Oh My ZSH!</a></p>
-<h3 id="u4E0B_u8F7D_u5B89_u88C5"><a href="#u4E0B_u8F7D_u5B89_u88C5" class="headerlink" title="下载安装"></a>下载安装</h3><p>Mac安装命令：</p>
-<pre><code>$ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
-</code></pre><p>设置zsh为你的默认shell</p>
-<pre><code>chsh -s /bin/zsh
-</code></pre><p>重启终端就OK了</p>
-<h3 id="u4FEE_u6539_u4E3B_u9898"><a href="#u4FEE_u6539_u4E3B_u9898" class="headerlink" title="修改主题"></a>修改主题</h3><p>主题地址：<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes" target="_blank" rel="external">Themes</a></p>
-<p>编辑配置文件</p>
-<pre><code>vi ~/.zshrc
-</code></pre><p>修改</p>
-<pre><code>ZSH_THEME=&quot;ys&quot;
-</code></pre><p><img src="https://cloud.githubusercontent.com/assets/1415488/13198621/f2c1320c-d848-11e5-8f22-7fac1baeec2f.jpg" alt="image"></p>
-<h3 id="u914D_u7F6E"><a href="#u914D_u7F6E" class="headerlink" title="配置"></a>配置</h3><ul>
-<li>设置别名</li>
-<li>插件</li>
-</ul>
-<p>详见：<a href="https://zhuanlan.zhihu.com/p/19556676" target="_blank" rel="external">zsh</a></p>
-<h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="http://my.oschina.net/gabriel1215/blog/356935" target="_blank" rel="external">mac下非常好用的命令行工具 iTerm2</a></li>
-<li><a href="http://www.cnsecer.com/7859.html" target="_blank" rel="external">iterm2 和oh my zsh安装以及使用介绍</a></li>
-<li><a href="http://www.cnsecer.com/7859.html" target="_blank" rel="external">Mac下配置iterm2和oh-my-zsh</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/19556676" target="_blank" rel="external">终极 Shell——ZSH</a></li>
 </ul>
 
       
@@ -281,18 +259,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/09/mongo-1-1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          MongoDB基本概念介绍
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/01/30/php-nginx-in-mac/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Mac下安装PHP开发环境</div>
+    <a href="/2016/07/28/iterm2-zsh/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac下安装和使用iTerm2&amp;Oh my zsh</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -327,7 +296,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="iterm2-zsh" data-title="Mac下安装和使用iTerm2&amp;Oh my zsh" data-url="http://youyusan.github.io/2016/07/28/iterm2-zsh/"></div>
+	<div class="ds-thread" data-thread-key="mongo-1-1" data-title="MongoDB基本概念介绍" data-url="http://youyusan.github.io/2016/08/09/mongo-1-1/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
