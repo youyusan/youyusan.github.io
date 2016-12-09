@@ -12,8 +12,8 @@
 <meta property="og:url" content="http://youyusan.github.io/2016/08/09/mongo-1-1/index.html">
 <meta property="og:site_name" content="游渔的渔人小屋">
 <meta property="og:description" content="简介mongodb是一款非关系型面向文档的数据库，它的特点是高性能、易部署、易使用，存储数据方便。">
-<meta property="og:image" content="http://youyusan.github.io/media/14811912227153/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-09%2010.27.57.png">
-<meta property="og:updated_time" content="2016-12-09T03:22:18.000Z">
+<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-09%2010.27.57.png">
+<meta property="og:updated_time" content="2016-12-09T03:47:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MongoDB基本概念介绍">
 <meta name="twitter:description" content="简介mongodb是一款非关系型面向文档的数据库，它的特点是高性能、易部署、易使用，存储数据方便。">
@@ -43,7 +43,7 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">程序猿，不仅仅是一个程序猿</p>
+		<p class="header-subtitle">懂点心理学的程序员</p>
 		
 
 		
@@ -146,7 +146,7 @@
 			  <h1 class="header-author">游渔&#39;s Blog</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">程序猿，不仅仅是一个程序猿</p>
+			<p class="header-subtitle">懂点心理学的程序员</p>
 			
 			<nav class="header-menu">
 				<ul>
@@ -213,7 +213,7 @@
         <h2 id="u7B80_u4ECB"><a href="#u7B80_u4ECB" class="headerlink" title="简介"></a>简介</h2><p>mongodb是一款非关系型面向文档的数据库，它的特点是高性能、易部署、易使用，存储数据方便。<br><a id="more"></a></p>
 <h2 id="u6982_u5FF5"><a href="#u6982_u5FF5" class="headerlink" title="概念"></a>概念</h2><h3 id="u6570_u636E_u5E93"><a href="#u6570_u636E_u5E93" class="headerlink" title="数据库"></a>数据库</h3><p>数据库是一个物理容器集合。每个数据库都有自己的一套文件系统上的文件。一个单一的MongoDB服务器通常有多个数据库。</p>
 <h3 id="u96C6_u5408"><a href="#u96C6_u5408" class="headerlink" title="集合"></a>集合</h3><p>集合是一组MongoDB的文档。它相当于一个RDBMS表。收集存在于一个单一的数据库。集合不执行模式。集合内的文档可以有不同的领域。通常情况下，一个集合中的所有文件是相同或相关的目的。<br><em>它类似关系型数据库中的“表”，多个集合构成数据库。</em></p>
-<h3 id="u6587_u6863"><a href="#u6587_u6863" class="headerlink" title="文档"></a>文档</h3><p>文档是一组键 - 值对。文件动态模式。动态模式是指，在相同集合中的文档不需要具有相同的字段或结构组的公共字段的集合的文档，可以容纳不同类型的数据。<br><em>它类似关系型数据库中的“行”，多个文档构成集合</em><br><img src="/media/14811912227153/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-09%2010.27.57.png" alt="屏幕快照 2016-12-09 10.27.57"></p>
+<h3 id="u6587_u6863"><a href="#u6587_u6863" class="headerlink" title="文档"></a>文档</h3><p>文档是一组键 - 值对。文件动态模式。动态模式是指，在相同集合中的文档不需要具有相同的字段或结构组的公共字段的集合的文档，可以容纳不同类型的数据。<br><em>它类似关系型数据库中的“行”，多个文档构成集合</em><br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-09%2010.27.57.png" alt=""></p>
 <h3 id="u7D22_u5F15"><a href="#u7D22_u5F15" class="headerlink" title="索引"></a>索引</h3><p>索引是一种特殊的数据结构，存储设置在一个易于遍历形式的数据的一小部分。索引存储一个特定的字段或一组字段的值，在索引中指定的值的字段排列的。</p>
 <h3 id="u590D_u5236"><a href="#u590D_u5236" class="headerlink" title="复制"></a>复制</h3><p>复制是跨多个服务器同步数据的过程中。复制提供了冗余和增加数据可用性与不同的数据库服务器上的数据的多个副本，复制保护数据库从一台服务器上的损失。复制也可以让恢复硬件故障和服务中断。额外的数据副本，可以进行灾难恢复，报告，或备份。</p>
 <h3 id="u5206_u7247"><a href="#u5206_u7247" class="headerlink" title="分片"></a>分片</h3><p>分片存储在多台机器上的数据记录的过程，它是MongoDB的方法来满足数据增长的需求。一台机器上的大小的数据的增加，可能并不足够来存储数据，也不能提供可接受的读取和写入通过。分片解决问题的水平缩放。通过分片，你添加更多的机器支持数据增长的读取和写入操作需求。</p>
