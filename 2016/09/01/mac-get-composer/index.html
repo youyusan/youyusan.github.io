@@ -4,22 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>前端集成解决方案——Yeoman、Bower和Grunt | 游渔的渔人小屋</title>
+  <title>Mac下安装composer一些基础操作 | 游渔的渔人小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="概念前端集成解决方案是一套包含框架和工具，便于开发者快速构建美丽实用的WEB应用程序的工作流。">
+  <meta name="description" content="什么是composercomposer是PHP的一个依赖管理工具，不是包管理器，它涉及包（packages）和库（libraries）。只要在项目中申明所依赖的外部工具库，composer会自动安装这些工具库及依赖的库文件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端集成解决方案——Yeoman、Bower和Grunt">
-<meta property="og:url" content="http://youyusan.github.io/2016/10/15/yo_bower_grunt/index.html">
+<meta property="og:title" content="Mac下安装composer一些基础操作">
+<meta property="og:url" content="http://youyusan.github.io/2016/09/01/mac-get-composer/index.html">
 <meta property="og:site_name" content="游渔的渔人小屋">
-<meta property="og:description" content="概念前端集成解决方案是一套包含框架和工具，便于开发者快速构建美丽实用的WEB应用程序的工作流。">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/14823048275593.jpg">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/2016-12-21 at 16.02.png">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/2016-12-21%20at%2016.03.png">
-<meta property="og:image" content="http://7xpnx0.com1.z0.glb.clouddn.com/屏幕快照 2016-12-21 16.13.04.png">
-<meta property="og:updated_time" content="2016-12-21T08:22:27.000Z">
+<meta property="og:description" content="什么是composercomposer是PHP的一个依赖管理工具，不是包管理器，它涉及包（packages）和库（libraries）。只要在项目中申明所依赖的外部工具库，composer会自动安装这些工具库及依赖的库文件">
+<meta property="og:updated_time" content="2017-01-04T08:53:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端集成解决方案——Yeoman、Bower和Grunt">
-<meta name="twitter:description" content="概念前端集成解决方案是一套包含框架和工具，便于开发者快速构建美丽实用的WEB应用程序的工作流。">
+<meta name="twitter:title" content="Mac下安装composer一些基础操作">
+<meta name="twitter:description" content="什么是composercomposer是PHP的一个依赖管理工具，不是包管理器，它涉及包（packages）和库（libraries）。只要在项目中申明所依赖的外部工具库，composer会自动安装这些工具库及依赖的库文件">
   
     <link rel="alternative" href="/atom.xml" title="游渔的渔人小屋" type="application/atom+xml">
   
@@ -176,11 +172,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-yo_bower_grunt" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mac-get-composer" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/10/15/yo_bower_grunt/" class="article-date">
-  	<time datetime="2016-10-15T07:51:20.000Z" itemprop="datePublished">2016-10-15</time>
+      <a href="/2016/09/01/mac-get-composer/" class="article-date">
+  	<time datetime="2016-09-01T11:14:11.000Z" itemprop="datePublished">2016-09-01</time>
 </a>
     </div>
   
@@ -193,7 +189,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      前端集成解决方案——Yeoman、Bower和Grunt
+      Mac下安装composer一些基础操作
     </h1>
   
 
@@ -202,7 +198,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bower/">Bower</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Grunt/">Grunt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Yeoman/">Yeoman</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/composer/">composer</a></li></ul>
 	</div>
 
         
@@ -213,31 +209,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="u6982_u5FF5"><a href="#u6982_u5FF5" class="headerlink" title="概念"></a>概念</h2><p>前端集成解决方案是一套包含框架和工具，便于开发者快速构建美丽实用的WEB应用程序的工作流。<br><a id="more"></a></p>
-<h2 id="u4F18_u70B9"><a href="#u4F18_u70B9" class="headerlink" title="优点"></a>优点</h2><ul>
-<li>强制开发规范</li>
-<li>组件库维护和使用</li>
-<li>模块化前端项目</li>
-<li>服务器部署前压缩，检查流程简化和完善</li>
+        <h2 id="u4EC0_u4E48_u662Fcomposer"><a href="#u4EC0_u4E48_u662Fcomposer" class="headerlink" title="什么是composer"></a>什么是composer</h2><p>composer是PHP的一个依赖管理工具，不是包管理器，它涉及包（packages）和库（libraries）。<br>只要在项目中申明所依赖的外部工具库，composer会自动安装这些工具库及依赖的库文件<br><a id="more"></a></p>
+<h2 id="u5B89_u88C5composer"><a href="#u5B89_u88C5composer" class="headerlink" title="安装composer"></a>安装composer</h2><p>Mac以及Linux全局安装<br><code>curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/compose</code><br>安装好后输入<code>composer</code>查看是否正常显示</p>
+<h2 id="u4F7F_u7528_u4E2D_u56FD_u5168_u91CF_u955C_u50CF"><a href="#u4F7F_u7528_u4E2D_u56FD_u5168_u91CF_u955C_u50CF" class="headerlink" title="使用中国全量镜像"></a>使用中国全量镜像</h2><h4 id="u4FEE_u6539_composer__u7684_u5168_u5C40_u914D_u7F6E_u6587_u4EF6"><a href="#u4FEE_u6539_composer__u7684_u5168_u5C40_u914D_u7F6E_u6587_u4EF6" class="headerlink" title="修改 composer 的全局配置文件"></a>修改 composer 的全局配置文件</h4><p><code>composer config -g repo.packagist composer https://packagist.phpcomposer.com</code></p>
+<h4 id="u4FEE_u6539_u5F53_u524D_u9879_u76EE_u7684_composer-json__u914D_u7F6E_u6587_u4EF6"><a href="#u4FEE_u6539_u5F53_u524D_u9879_u76EE_u7684_composer-json__u914D_u7F6E_u6587_u4EF6" class="headerlink" title="修改当前项目的 composer.json 配置文件"></a>修改当前项目的 composer.json 配置文件</h4><p>进入你的项目的根目录（也就是 composer.json 文件所在目录），执行如下命令：<br><code>composer config repo.packagist composer https://packagist.phpcomposer.com</code></p>
+<h2 id="u57FA_u672C_u4F7F_u7528"><a href="#u57FA_u672C_u4F7F_u7528" class="headerlink" title="基本使用"></a>基本使用</h2><ul>
+<li>composer init : 初始化composer.json文件</li>
+<li>composer search : 查找特定的包</li>
+<li>composer show : 显示包的信息</li>
+<li>composer require :下载特定的包及其依赖</li>
+<li>composer install : 安装composer.json文件里的包</li>
+<li>composer update : 更新（删除）composer.json文件里的包 </li>
 </ul>
-<h2 id="u57FA_u672C_u4ECB_u7ECD"><a href="#u57FA_u672C_u4ECB_u7ECD" class="headerlink" title="基本介绍"></a>基本介绍</h2><h3 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h3><p>以下三个组件必须基于nodejs环境才能运行，具体安装见官网：<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
-<h3 id="Yeoman"><a href="#Yeoman" class="headerlink" title="Yeoman"></a>Yeoman</h3><p><strong>脚手架</strong>：自动将最佳实践和工具整合进来，相当于生成器，模具</p>
-<p>安装：<code>npm install -g yo</code>-g代表全局安装<br>查看版本：<code>yo -v</code></p>
-<h3 id="Bower"><a href="#Bower" class="headerlink" title="Bower"></a>Bower</h3><p><strong>包管理器</strong>：跟踪管理公共部分、库等文件</p>
-<p>安装：<code>npm install -g bower</code><br>查看版本：<code>bower -v</code></p>
-<h3 id="Grunt"><a href="#Grunt" class="headerlink" title="Grunt"></a>Grunt</h3><p><strong>构建工具</strong>：进行压缩代码等工作自动化操作</p>
-<p>安装：<code>npm install -g grunt-cli</code><br>查看版本：<code>grunt -version</code></p>
-<p><img src="http://7xpnx0.com1.z0.glb.clouddn.com/14823048275593.jpg" alt=""></p>
-<h2 id="u5177_u4F53_u4F7F_u7528"><a href="#u5177_u4F53_u4F7F_u7528" class="headerlink" title="具体使用"></a>具体使用</h2><h3 id="u5B89_u88C5yeoman_u76F8_u5E94_u7684_u751F_u6210_u5668"><a href="#u5B89_u88C5yeoman_u76F8_u5E94_u7684_u751F_u6210_u5668" class="headerlink" title="安装yeoman相应的生成器"></a>安装yeoman相应的生成器</h3><p>这里我们以安装angular为例，有两种安装方法</p>
-<ol>
-<li>直接安装：<br><code>npm install -g generator-angular</code></li>
-<li>输入yo命令选择安装<br><code>yo</code><br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-12-21 at 16.02.png" alt=""><br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/2016-12-21%20at%2016.03.png" alt=""><br>其他的生成器还有<br>generator-webapp<br>generator-bootstrap<br>generator-karma<br>…<br>具体可见yeoman官网：<a href="http://yeoman.io/authoring/" target="_blank" rel="external">http://yeoman.io/authoring/</a><h3 id="u4E0B_u8F7Dgenerator-angular_u5B89_u88C5_u5305"><a href="#u4E0B_u8F7Dgenerator-angular_u5B89_u88C5_u5305" class="headerlink" title="下载generator-angular安装包"></a>下载generator-angular安装包</h3>首先新建一个文件夹<br><code>mkdir my-yo-project</code><br>进入文件夹<br><code>cd my-yo-project</code><br>下载generator-angular安装包<br><code>yo generator-angular</code><h3 id="u8FD0_u884C"><a href="#u8FD0_u884C" class="headerlink" title="运行"></a>运行</h3>启动node服务器运行angular<br><code>sudo grunt server</code><br>如果没有问题将会弹出以下界面<br><img src="http://7xpnx0.com1.z0.glb.clouddn.com/屏幕快照 2016-12-21 16.13.04.png" alt=""></li>
-</ol>
-<h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><p><a href="http://blog.fens.me/nodejs-yeoman-intro/" target="_blank" rel="external">Yeoman自动构建js项目</a></p>
-</li>
-<li><p><a href="https://segmentfault.com/a/1190000002525359" target="_blank" rel="external">Yeoman（Yo、Grunt、Bower）——前端工程化-新手之路1</a></p>
-</li>
+<p>##参考</p>
+<ul>
+<li>官网：<a href="https://getcomposer.org/" target="_blank" rel="external">https://getcomposer.org/</a></li>
+<li>中文网：<a href="http://www.phpcomposer.com/" target="_blank" rel="external">http://www.phpcomposer.com/</a></li>
 </ul>
 
       
@@ -248,9 +236,18 @@
     
 <nav id="article-nav">
   
+    <a href="/2016/10/15/yo_bower_grunt/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          前端集成解决方案——Yeoman、Bower和Grunt
+        
+      </div>
+    </a>
   
-    <a href="/2016/09/01/mac-get-composer/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Mac下安装composer一些基础操作</div>
+  
+    <a href="/2016/08/09/mongo-1-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MongoDB基本概念介绍</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -285,7 +282,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="yo_bower_grunt" data-title="前端集成解决方案——Yeoman、Bower和Grunt" data-url="http://youyusan.github.io/2016/10/15/yo_bower_grunt/"></div>
+	<div class="ds-thread" data-thread-key="mac-get-composer" data-title="Mac下安装composer一些基础操作" data-url="http://youyusan.github.io/2016/09/01/mac-get-composer/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
