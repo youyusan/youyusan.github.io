@@ -202,12 +202,11 @@
         <h2 id="u63D0_u524D_u5B89_u88C5_u597Dhomebrew"><a href="#u63D0_u524D_u5B89_u88C5_u597Dhomebrew" class="headerlink" title="提前安装好homebrew"></a>提前安装好homebrew</h2><p><a href="http://youyusan.github.io/2016/01/30/php-nginx-in-mac/">详见</a></p>
 <h2 id="u5220_u9664Mac_u81EA_u5E26_u7684Apache"><a href="#u5220_u9664Mac_u81EA_u5E26_u7684Apache" class="headerlink" title="删除Mac自带的Apache"></a>删除Mac自带的Apache</h2><ol>
 <li><p>停掉Apache服务 </p>
-<pre><code>sudo apachectl stop
-</code></pre></li>
+<p> sudo apachectl stop</p>
+</li>
 <li><p>删除Mac自带的Apache </p>
-<pre><code>sudo rm /usr/sbin/httpd 
-sudo rm -r /etc/apache2/
-</code></pre></li>
+<p> sudo rm /usr/sbin/httpd<br> sudo rm -r /etc/apache2/</p>
+</li>
 </ol>
 <h2 id="u5B89_u88C5Apache"><a href="#u5B89_u88C5Apache" class="headerlink" title="安装Apache"></a>安装Apache</h2><h3 id="u4F7F_u7528homebrew_u4E0B_u8F7DApache"><a href="#u4F7F_u7528homebrew_u4E0B_u8F7DApache" class="headerlink" title="使用homebrew下载Apache"></a>使用homebrew下载Apache</h3><pre><code>brew install apache2
 </code></pre><h3 id="u4FDD_u7559_u4E0B_u8F7D_u540E_u7684_u4F7F_u7528_u63D0_u793A"><a href="#u4FDD_u7559_u4E0B_u8F7D_u540E_u7684_u4F7F_u7528_u63D0_u793A" class="headerlink" title="保留下载后的使用提示"></a>保留下载后的使用提示</h3><pre><code>The default ports have been set in /usr/local/etc/httpd/httpd.conf to 8080 and in
@@ -219,8 +218,8 @@ Or, if you don&apos;t want/need a background service you can just run:
   apachectl start
 </code></pre><h3 id="u4FEE_u6539Apache_u914D_u7F6E_u6587_u4EF6"><a href="#u4FEE_u6539Apache_u914D_u7F6E_u6587_u4EF6" class="headerlink" title="修改Apache配置文件"></a>修改Apache配置文件</h3><ol>
 <li><p>打开配置文件</p>
-<pre><code>sudo vim /usr/local/etc/httpd/httpd.conf
-</code></pre></li>
+<p> sudo vim /usr/local/etc/httpd/httpd.conf</p>
+</li>
 <li><p>修改以下几项</p>
 </li>
 </ol>
