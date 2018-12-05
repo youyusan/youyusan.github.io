@@ -7,45 +7,36 @@
   <title>Mac10.13.6下使用homebrew安装PHP+Apache开发环境 | 游渔的渔人小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="提前安装好homebrew详见
-删除Mac自带的Apache
-停掉Apache服务 
- sudo apachectl stop
-
-删除Mac自带的Apache 
- sudo rm /usr/sbin/httpd sudo rm -r /etc/apache2/
-
-
+删除Mac自带的Apache 停掉Apache服务 
+sudo apachectl stop
+ 删除Mac自带的Apache 
+sudo rm /usr/sbin/httpd 
+sudo rm -r /etc/apache2/
 安装Apache使用homebrew下载Apachebrew install apache2
-保留下载后的使用提示The defaul">
+保留下载后的使用提示The default p">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac10.13.6下使用homebrew安装PHP+Apache开发环境">
 <meta property="og:url" content="http://youyusan.github.io/2018/05/05/Mac10-13-6-homebrew-PHP-Apache/index.html">
 <meta property="og:site_name" content="游渔的渔人小屋">
 <meta property="og:description" content="提前安装好homebrew详见
-删除Mac自带的Apache
-停掉Apache服务 
- sudo apachectl stop
-
-删除Mac自带的Apache 
- sudo rm /usr/sbin/httpd sudo rm -r /etc/apache2/
-
-
+删除Mac自带的Apache 停掉Apache服务 
+sudo apachectl stop
+ 删除Mac自带的Apache 
+sudo rm /usr/sbin/httpd 
+sudo rm -r /etc/apache2/
 安装Apache使用homebrew下载Apachebrew install apache2
-保留下载后的使用提示The defaul">
-<meta property="og:updated_time" content="2018-12-05T14:21:54.574Z">
+保留下载后的使用提示The default p">
+<meta property="og:updated_time" content="2018-12-05T14:25:16.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac10.13.6下使用homebrew安装PHP+Apache开发环境">
 <meta name="twitter:description" content="提前安装好homebrew详见
-删除Mac自带的Apache
-停掉Apache服务 
- sudo apachectl stop
-
-删除Mac自带的Apache 
- sudo rm /usr/sbin/httpd sudo rm -r /etc/apache2/
-
-
+删除Mac自带的Apache 停掉Apache服务 
+sudo apachectl stop
+ 删除Mac自带的Apache 
+sudo rm /usr/sbin/httpd 
+sudo rm -r /etc/apache2/
 安装Apache使用homebrew下载Apachebrew install apache2
-保留下载后的使用提示The defaul">
+保留下载后的使用提示The default p">
   
     <link rel="alternative" href="/atom.xml" title="游渔的渔人小屋" type="application/atom+xml">
   
@@ -240,15 +231,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="u63D0_u524D_u5B89_u88C5_u597Dhomebrew"><a href="#u63D0_u524D_u5B89_u88C5_u597Dhomebrew" class="headerlink" title="提前安装好homebrew"></a>提前安装好homebrew</h2><p><a href="http://youyusan.github.io/2016/01/30/php-nginx-in-mac/">详见</a></p>
-<h2 id="u5220_u9664Mac_u81EA_u5E26_u7684Apache"><a href="#u5220_u9664Mac_u81EA_u5E26_u7684Apache" class="headerlink" title="删除Mac自带的Apache"></a>删除Mac自带的Apache</h2><ol>
-<li><p>停掉Apache服务 </p>
-<p> sudo apachectl stop</p>
-</li>
-<li><p>删除Mac自带的Apache </p>
-<p> sudo rm /usr/sbin/httpd<br> sudo rm -r /etc/apache2/</p>
-</li>
-</ol>
-<h2 id="u5B89_u88C5Apache"><a href="#u5B89_u88C5Apache" class="headerlink" title="安装Apache"></a>安装Apache</h2><h3 id="u4F7F_u7528homebrew_u4E0B_u8F7DApache"><a href="#u4F7F_u7528homebrew_u4E0B_u8F7DApache" class="headerlink" title="使用homebrew下载Apache"></a>使用homebrew下载Apache</h3><pre><code>brew install apache2
+<h2 id="u5220_u9664Mac_u81EA_u5E26_u7684Apache"><a href="#u5220_u9664Mac_u81EA_u5E26_u7684Apache" class="headerlink" title="删除Mac自带的Apache"></a>删除Mac自带的Apache</h2><p> 停掉Apache服务 </p>
+<pre><code>sudo apachectl stop
+</code></pre><p> 删除Mac自带的Apache </p>
+<pre><code>sudo rm /usr/sbin/httpd 
+sudo rm -r /etc/apache2/
+</code></pre><h2 id="u5B89_u88C5Apache"><a href="#u5B89_u88C5Apache" class="headerlink" title="安装Apache"></a>安装Apache</h2><h3 id="u4F7F_u7528homebrew_u4E0B_u8F7DApache"><a href="#u4F7F_u7528homebrew_u4E0B_u8F7DApache" class="headerlink" title="使用homebrew下载Apache"></a>使用homebrew下载Apache</h3><pre><code>brew install apache2
 </code></pre><h3 id="u4FDD_u7559_u4E0B_u8F7D_u540E_u7684_u4F7F_u7528_u63D0_u793A"><a href="#u4FDD_u7559_u4E0B_u8F7D_u540E_u7684_u4F7F_u7528_u63D0_u793A" class="headerlink" title="保留下载后的使用提示"></a>保留下载后的使用提示</h3><pre><code>The default ports have been set in /usr/local/etc/httpd/httpd.conf to 8080 and in
 /usr/local/etc/httpd/extra/httpd-ssl.conf to 8443 so that httpd can run without sudo.
 
@@ -256,13 +244,9 @@ To have launchd start httpd now and restart at login:
   brew services start httpd
 Or, if you don&apos;t want/need a background service you can just run:
   apachectl start
-</code></pre><h3 id="u4FEE_u6539Apache_u914D_u7F6E_u6587_u4EF6"><a href="#u4FEE_u6539Apache_u914D_u7F6E_u6587_u4EF6" class="headerlink" title="修改Apache配置文件"></a>修改Apache配置文件</h3><ol>
-<li><p>打开配置文件</p>
-<p> sudo vim /usr/local/etc/httpd/httpd.conf</p>
-</li>
-<li><p>修改以下几项</p>
-</li>
-</ol>
+</code></pre><h3 id="u4FEE_u6539Apache_u914D_u7F6E_u6587_u4EF6"><a href="#u4FEE_u6539Apache_u914D_u7F6E_u6587_u4EF6" class="headerlink" title="修改Apache配置文件"></a>修改Apache配置文件</h3><p> 打开配置文件</p>
+<pre><code>sudo vim /usr/local/etc/httpd/httpd.conf
+</code></pre><p> 修改以下几项</p>
 <p>修改端口</p>
 <pre><code>Listen 8080
 </code></pre><p>修改服务名称</p>
@@ -281,12 +265,9 @@ Or, if you don&apos;t want/need a background service you can just run:
 <pre><code>DocumentRoot &quot;/var/www&quot;
 &lt;Directory &quot;/var/www&quot;&gt;
 </code></pre><p>启动Apache <code>sudo apachectl start</code>，打开浏览器输入<code>localhost：8080</code>将会看到 “It works！”，证明启动成功。     </p>
-<h2 id="u5B89_u88C5PHP5-6"><a href="#u5B89_u88C5PHP5-6" class="headerlink" title="安装PHP5.6"></a>安装PHP5.6</h2><ol>
-<li><p>下载php5.6</p>
+<h2 id="u5B89_u88C5PHP5-6"><a href="#u5B89_u88C5PHP5-6" class="headerlink" title="安装PHP5.6"></a>安装PHP5.6</h2><p> 下载php5.6</p>
 <pre><code>brew install php@5.6
-</code></pre></li>
-</ol>
-<p>2.保留下载后的使用提示   </p>
+</code></pre><p>保留下载后的使用提示   </p>
 <pre><code>To enable PHP in Apache add the following to httpd.conf and restart Apache:
    LoadModule php5_module /usr/local/opt/php@5.6/lib/httpd/modules/libphp5.so
 
@@ -316,19 +297,13 @@ To have launchd start php@5.6 now and restart at login:
   brew services start php@5.6
 Or, if you don&apos;t want/need a background service you can just run:
   php-fpm
-</code></pre><ol>
-<li>如上所述，修改<code>httpd.conf</code>和<code>zshrc</code>，加入环境变量，并开启php5.6和php-fpm</li>
-<li>重启Apache，创建info.php，看是否成功</li>
-</ol>
-<h2 id="u914D_u7F6EApache_u591A_u7AD9_u70B9_u6A21_u5F0F"><a href="#u914D_u7F6EApache_u591A_u7AD9_u70B9_u6A21_u5F0F" class="headerlink" title="配置Apache多站点模式"></a>配置Apache多站点模式</h2><ol>
-<li><p>打开配置文件</p>
+</code></pre><p> 如上所述，修改<code>httpd.conf</code>和<code>zshrc</code>，加入环境变量，并开启php5.6和php-fpm<br> 重启Apache，创建info.php，看是否成功</p>
+<h2 id="u914D_u7F6EApache_u591A_u7AD9_u70B9_u6A21_u5F0F"><a href="#u914D_u7F6EApache_u591A_u7AD9_u70B9_u6A21_u5F0F" class="headerlink" title="配置Apache多站点模式"></a>配置Apache多站点模式</h2><p> 打开配置文件</p>
 <pre><code>sudo vim /usr/local/etc/httpd/httpd.conf
-</code></pre></li>
-<li><p>将<code>#Include /usr/local/etc/httpd/extra/httpd-vhosts.conf</code>前面注释去掉</p>
+</code></pre><p> 将<code>#Include /usr/local/etc/httpd/extra/httpd-vhosts.conf</code>前面注释去掉</p>
 <pre><code># Virtual hosts 
 Include /usr/local/etc/httpd/extra/httpd-vhosts.conf
-</code></pre></li>
-<li><p>修改<code>httpd-vhosts.conf</code></p>
+</code></pre><p> 修改<code>httpd-vhosts.conf</code></p>
 <pre><code>&lt;VirtualHost *:8080&gt;
     ServerAdmin localhost
     DocumentRoot &quot;/var/www/&quot;
@@ -343,13 +318,9 @@ Include /usr/local/etc/httpd/extra/httpd-vhosts.conf
     DocumentRoot &quot;/var/www/idvert/beibei&quot;
     ServerName beibei-test.com
 &lt;/VirtualHost&gt;
-</code></pre></li>
-<li><p>修改hosts，在其中加入<code>127.0.0.1  beibei-test.com</code></p>
+</code></pre><p> 修改hosts，在其中加入<code>127.0.0.1  beibei-test.com</code></p>
 <pre><code>sudo vim /etc/hosts
-</code></pre></li>
-<li><p>打开浏览器，输入<code>beibei-test.com:8080</code>即可看到配置好的网站</p>
-</li>
-</ol>
+</code></pre><p> 打开浏览器，输入<code>beibei-test.com:8080</code>即可看到配置好的网站</p>
 
       
     </div>
