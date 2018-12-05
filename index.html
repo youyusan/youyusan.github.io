@@ -205,7 +205,7 @@
 <pre><code>sudo apachectl stop
 </code></pre></li>
 <li><p>删除Mac自带的Apache </p>
-<pre><code>sudo rm /usr/sbin/httpd
+<pre><code>sudo rm /usr/sbin/httpd 
 sudo rm -r /etc/apache2/
 </code></pre></li>
 </ol>
@@ -286,7 +286,7 @@ Or, if you don&apos;t want/need a background service you can just run:
 <pre><code>sudo vim /usr/local/etc/httpd/httpd.conf
 </code></pre></li>
 <li><p>将<code>#Include /usr/local/etc/httpd/extra/httpd-vhosts.conf</code>前面注释去掉</p>
-<pre><code># Virtual hosts
+<pre><code># Virtual hosts 
 Include /usr/local/etc/httpd/extra/httpd-vhosts.conf
 </code></pre></li>
 <li><p>修改<code>httpd-vhosts.conf</code></p>
